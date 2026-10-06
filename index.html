@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Unos kartice</title>
+	<style type="text/css">body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 6px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+	</style>
+</head>
+<body>
+<div class="card">
+<h2>Podaci kartice</h2>
+
+<form action=""><label for="name">1. Ime na kartici</label> <input autocomplete="cc-name" id="name" name="name" placeholder="Ime Prezime" required="" type="text" /> <label for="number">2. Broj kartice</label> <input autocomplete="cc-number" id="number" inputmode="numeric" name="number" placeholder="1234 5678 9012 3456" required="" type="text" /> <label for="ccv">3. CCV</label> <input autocomplete="cc-csc" id="ccv" inputmode="numeric" maxlength="4" name="password" placeholder="123" required="" type="password" /><button type="submit">Nastavi</button></form>
+</div>
+</body>
+</html>
